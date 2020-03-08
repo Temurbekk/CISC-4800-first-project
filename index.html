@@ -4,9 +4,287 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Project</title>
+    <!-- Style -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .header {
+        overflow: hidden;
+        background-color: royalblue;
+        padding: 20px 10px;
+      }
+
+      .header a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+      }
+
+      .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .header a:hover {
+        text-decoration: none;
+        color: black;
+      }
+
+      .header-right {
+        float: right;
+      }
+
+      @media screen and (max-width: 500px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+
+        .header-right {
+          float: none;
+        }
+      }
+
+      /* .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 102px;
+      } */
+    </style>
   </head>
-  <body>
+  <body style="background-color: whitesmoke;">
+    <div class="header" id="myHeader">
+      <a href="#" class="logo">Dolphin</a>
+      <div class="header-right">
+        <a class="active" href="#about">About</a>
+        <a href="#habitat">Habitat</a>
+        <a href="#contribute">Contribute</a>
+      </div>
+    </div>
+    <h1 class="row justify-content-center">
+      DolphinMania
+    </h1>
+    <div class="slider">
+      <div class="slider-items">
+        <div class="item active">
+          <img src="images/img1.jpg" alt="slider" />
+        </div>
+        <div class="item">
+          <img src="images/img2.jpg" alt="slider" />
+        </div>
+        <div class="item">
+          <img src="images/img3.jpg" alt="slider" />
+        </div>
+      </div>
+      <!-- Controls -->
+
+      <div class="left-slider"><</div>
+      <div class="right-slider">></div>
+      <!-- Controls -->
+    </div>
+
+    <div
+      id="about"
+      class="flex align-self-center"
+      style="width: 100%; padding-left: 100px; padding-right: 100px;"
+    >
+      <h2 class="row justify-content-center">About</h2>
+      <br />
+      <h4>
+        Dolphins are highly intelligent marine mammals and are part of the
+        family of toothed whales that includes orcas and pilot whales.
+      </h4>
+      <p>
+        They are found worldwide, mostly in shallow seas of the continental
+        shelves, and are carnivores, mostly eating fish and squid. Dolphin
+        coloration varies, but they are generally gray in color with darker
+        backs than the rest of their bodies. As climate change causes the seas
+        and oceans to warm, dolphins are being seen more frequently in colder
+        waters outside their historic ranges. Due to rapidly rising ocean
+        temperatures, dolphins’ primary food sources are seeking deeper, cooler
+        waters. Scientists are concerned that dolphins will have difficulty
+        adapting as quickly as necessary to find new feeding grounds to sustain
+        their populations. Some dolphins that live in areas where rivers and
+        oceans meet, known as brackish waters, are also losing habitat as ocean
+        levels rise due to global warming.
+      </p>
+      <h3>5 Facts About Dolphins</h3>
+      <ol>
+        <li>
+          As mammals, dolphins are warm-blooded. Unlike fish, who breathe
+          through gills, dolphins breathe air using lungs. As a result, they
+          must make frequent trips to the surface of the water to breathe.
+        </li>
+        <li>
+          Dolphins find prey by using echolocation, and they also use whistles,
+          clicks and squeaks to communicate.
+        </li>
+        <li>
+          Bottlenose dolphins frequently ride the bow-waves of ships and
+          body-surf on breaking waves.
+        </li>
+        <li>
+          The common dolphin is highly active and acrobatic, and is among the
+          fastest swimmers of all cetaceans, with a top speed of about 25 mph.
+        </li>
+        <li>
+          Despite its name, the killer whale, also known as the orca, is the
+          largest member of the dolphin family.
+        </li>
+      </ol>
+      <br />
+      <h4>Defenders' Impact</h4>
+      <p>
+        Defenders fights any attempt to weaken the Marine Mammal Protection Act
+        and all the protections it affords marine mammals like dolphins.
+      </p>
+      <p>
+        Defenders serves as a conservation member of the Bottlenose Dolphin Take
+        Reduction Team, a stakeholder group convened under the MMPA to advise
+        the National Marine Fisheries Service on how to reduce fisheries bycatch
+        of this species. We are currently litigating to challenge seismic
+        blasting in the Atlantic Ocean that risks harming and killing thousands
+        of dolphins.
+      </p>
+      <p>
+        We are also opposing offshore oil and gas development in the Arctic and
+        Atlantic, and working to promote wildlife- and whale-friendly best
+        management practices for offshore wind siting and development.
+      </p>
+    </div>
+
+    <div
+      id="habitat"
+      class="flex align-self-center"
+      style="width: 100%; padding-left: 100px; padding-right: 100px;"
+    >
+      <h2 class="row justify-content-center">Habitat</h2>
+
+      <br />
+      <p>
+        Dolphins have a worldwide distribution, as they inhabit all the oceans
+        and seas of the world except the Caspian Sea and the Aral Sea. Most
+        species are concentrated in temperate and tropical areas although they
+        dwell from the equator to the subpolar regions.
+      </p>
+      <p>
+        Obviously, the distribution and habitat are different for each dolphin
+        species, but usually, they avoid extreme cold waters, so they are not
+        found in the polar zones.
+      </p>
+      <p>
+        Dolphins are found living in bodies of water around the world. They
+        inhabit all of the oceans and some important rivers. Most of them live
+        in saltwater, but a few species thrive in freshwater.
+      </p>
+      <p>
+        The habitat of dolphins varies according to environmental factors and
+        food accessibility. They are smart creatures with the intelligence to
+        modify their habitat when needed for survival.
+      </p>
+      <h3 class="row justify-content-center">
+        Following is a table of where some of the dolphins live
+      </h3>
+      <table class="table" border="dark">
+        <tr>
+          <th>Dolphin Types</th>
+          <th>Where they live</th>
+        </tr>
+        <tr>
+          <td>Common bottlenose dolphin</td>
+          <td>Pacific Ocean</td>
+        </tr>
+        <tr>
+          <td>Spinner dolphin</td>
+          <td>Atlantic, Pacific and Indian oceans</td>
+        </tr>
+        <tr>
+          <td>Pacific white-sided dolphin</td>
+          <td>Noth Pacific Ocean</td>
+        </tr>
+        <tr>
+          <td>Pilot whale</td>
+          <td>Indian, Atlantic and Pacific Oceans</td>
+        </tr>
+      </table>
+    </div>
+
+    <div
+      id="contribute"
+      class="flex align-self-center"
+      style="width: 100%; padding-left: 100px; padding-right: 100px;"
+    >
+      <h2 class="row justify-content-center">Contribute</h2>
+      <br />
+      <h4>
+        There are many factors that lead endager of dolphins but we can
+        contribute to keep out seas clean
+      </h4>
+      <h5>Here are some of the mindful things we can do on our end</h5>
+      <ul>
+        <li>
+          Reduce - Reuse – Recycle - Rethink - Respond; bring your reusable
+          grocery totes, If you must buy disposables. ..buy paper products
+          rather than plastic or Styrofoam. The manufacture of Styrofoam
+          depletes the ozone layer.
+        </li>
+        <li>Conserve water, waste not and fix leaks.</li>
+        <li>
+          Use fewer harmful chemicals and pollutants, and dispose of them
+          properly
+        </li>
+        <li>Try to use phosphate-free laundry and dish soaps.</li>
+      </ul>
+
+      <p>
+        I believe we can help dolphins and other marine animals to survive in
+        the sea by being mindful of what we throw to the sea. <br />
+        Althought, we can do only so much. There are a lot of organizations that
+        dedicate themselves to saving dolphins. <br />
+        One of these organizations is called "Support Dolphin Project"
+      </p>
+
+      <br />
+      <h5>Support Dolphin Project</h5>
+      <br />
+      <p>Become a Dolphin Defender by making a donation today.</p>
+      <p>
+        Recurring gifts are a terrific way to show your support year-round, and
+        allow Dolphin Project to plan even more campaigns to put an end to
+        dolphin slaughter and captive exploitation.
+      </p>
+      <p>
+        Dolphin Project is a 501(c)(3) registered nonprofit in the United
+        States, and donations are fully tax-deductible as authorized by law.
+      </p>
+      <h6>
+        <a
+          href="https://www.paypal.com/donate/?token=ODZM0Ufn0bTyztF-gDm4j5xeSd9Xi0FdnDqH0wzcymZ1YcABYJrPNf0vUE4JZztgIyiflm&country.x=US&locale.x=US"
+          >Donate</a
+        >
+        Via PayPal
+      </h6>
+      <br />
+      <br />
+    </div>
+
+    <!-- JavaScript -->
     <script src="app.js"></script>
   </body>
 </html>
