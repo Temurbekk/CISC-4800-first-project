@@ -31,18 +31,18 @@ let next = direction => {
   slides[index].classList.add('active');
 };
 
-window.onscroll = () => {
-  myFunction();
-};
+// window.onscroll = () => {
+//   myFunction();
+// };
 
-var header = document.getElementById('myHeader');
+// var header = document.getElementById('myHeader');
 
-var sticky = header.offsetTop;
+// var sticky = header.offsetTop;
 
-let myFunction = () => {
-  if (window.pageYOffset > sticky) {
-    header.classList.add('sticky');
-  } else {
-    header.classList.remove('sticky');
-  }
-};
+// let myFunction = () => {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add('sticky');
+//   } else {
+//     header.classList.remove('sticky');
+//   }
+// };
